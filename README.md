@@ -9,6 +9,8 @@ publish-main.py Program:
   1)监听pin4针脚，如果读取到了高电平数据，则把pin5设置为高电平，pin5去触发继电器，
   让继电器耦合。
   2）监听到pin4为高电平的同时，publish一条数据给EMQT,让订阅该主题的其他端收到这个消息。
+
+
 subcribe-main.py Program:
   订阅主题toilet，改变某个pin的电平
   主题规则：woman_on 打开女厕所有人示意灯，woman_off关闭女厕所有人示意灯。
