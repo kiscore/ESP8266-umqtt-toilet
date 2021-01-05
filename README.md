@@ -5,9 +5,11 @@
 人体红外传感器 HC-SR501
 继电器  高电平触发
 
-publish-main.py Program: 
+publish-main.py Program:
+
   1)监听pin4针脚，如果读取到了高电平数据，则把pin5设置为高电平，pin5去触发继电器，
   让继电器耦合。
+  
   2）监听到pin4为高电平的同时，publish一条数据给EMQT,让订阅该主题的其他端收到这个消息。
 
 
