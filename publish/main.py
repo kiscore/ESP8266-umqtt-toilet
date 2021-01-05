@@ -16,7 +16,7 @@ woman_send = False
 def publish_msg(topic, msg):
     if topic and msg:
         try:
-            c = MQTTClient("umqtt_client", "139.196.218.120")
+            c = MQTTClient("umqtt_client", "0.0.0.0")
             c.connect()
             c.publish(topic, msg)
             c.disconnect()
